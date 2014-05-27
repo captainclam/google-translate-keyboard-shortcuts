@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Google Translate Keyboard Shortcuts",
+  "description": "",
+  "version": "1.0",
+  "background": {
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://translate.google.com/*"],
+      "js": [
+        "keymaster.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
